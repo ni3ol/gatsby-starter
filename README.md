@@ -1,4 +1,4 @@
-# Gatsby.js boilerplate with a basic contact us form and navigation bar.
+# Simple Gatsby.js boilerplate with a basic contact us form and navigation bar.
 
 ## Features include:
 - Semantic ui form components
