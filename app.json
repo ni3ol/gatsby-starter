@@ -1,0 +1,15 @@
+{
+  "name": "Code with Nicol",
+  "description": "Nicol's tutoring website.",
+  "keywords": ["gatsby", "static", "ssg"],
+  "repository": "",
+  "success_url": "/",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-static"
+    }
+  ]
+}
