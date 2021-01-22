@@ -6,6 +6,6 @@
 - Email.js integration ready on the form
 
 ## To run
-`Clone the repo`
-`npm i`
-`npm run dev`
+- `Clone the repo`
+- `npm i`
+- `npm run dev`
