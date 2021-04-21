@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
-import { Menu, Sidebar, Icon, Header, MenuItem } from 'semantic-ui-react';
+import { Menu, Sidebar, Icon, Button } from 'semantic-ui-react';
 import styles from './navigation.module.css';
 import { Media } from '../media';
 
@@ -11,15 +11,34 @@ export default () => {
       <Media greaterThan="mobile">
         <nav role="navigation">
           <ul className={styles.navigation}>
-            <div>
-              <li className={styles.navigationItem}>
-                <Link to="/">Home</Link>
-              </li>
-            </div>
-            <div>
-              <li className={styles.navigationItem}>
-                <Link to="/contact-us/">Contact us</Link>
-              </li>
+            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+              <div>
+                <li className={styles.navigationItem}>
+                  <Link to="/">Code with Nicol</Link>
+                </li>
+              </div>
+              <div style={{ display: 'flex' }}>
+                <div>
+                  <li className={styles.navigationItem}>
+                    <Link to="/bootcamp">Upcoming Bootcamp</Link>
+                  </li>
+                </div>
+                <div>
+                  <li className={styles.navigationItem}>
+                    <Link to="/mentoring">Mentoring</Link>
+                  </li>
+                </div>
+                <div>
+                  <li className={styles.navigationItem}>
+                    <Link to="/about-us">About us</Link>
+                  </li>
+                </div>
+                <div>
+                  <li className={styles.navigationItem}>
+                    <Link to="/contact-us/">Contact us</Link>
+                  </li>
+                </div>
+              </div>
             </div>
           </ul>
         </nav>
@@ -48,19 +67,28 @@ export default () => {
                 padding: 20,
                 fontWeight: 'bold',
                 borderBottom: '1px solid',
+                color: 'white',
               }}
             >
               <Link to="/">Home</Link>
             </div>
-            <div
-              style={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                padding: 20,
-              }}
-            >
-              <Link to="/contact-us/">Contact us</Link>
+            <div>
+              <li className={styles.navigationItem}>
+                <Link to="/curriculum">Curriculum</Link>
+              </li>
+            </div>
+            <div>
+              <li className={styles.navigationItem}>
+                <Link to="/about-us">About us</Link>
+              </li>
+            </div>
+            <div>
+              <li className={styles.navigationItem}>
+                <Link to="/contact-us/">Contact us</Link>
+              </li>
+            </div>
+            <div>
+              <Button>Sign up</Button>
             </div>
           </Menu.Item>
         </Sidebar>
@@ -70,6 +98,7 @@ export default () => {
             onClick={isVisible ? () => setVisible(!isVisible) : undefined}
           >
             <Menu
+              inverted
               secondary
               style={{
                 padding: 5,

@@ -1,0 +1,41 @@
+p {
+  font-family: 'Avenir', Tahoma, Arial, Helvetica, sans-serif !important;
+  font-size: 18px;
+  color: #8b959E;
+  line-height: 1.6;
+}
+
+.container {
+  position: relative;
+  /* text-align: center; */
+
+  display: flex;
+  justify-content: center;
+}
+
+.heroDesktop {
+  position: absolute;
+  top: 40%;
+  padding-left: 167px;
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+}
+
+.headerList {
+  font-size: 18px !important;
+  color: white !important;
+}
+
+.heroTablet {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heroMobile {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
